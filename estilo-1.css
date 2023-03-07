@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+.barra-lateral{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 270px;
+	background: #11101d;
+}
+
+.barra-lateral .logo-detalhe{
+	height: 60px;
+	width: 100%;
+	display: flex;
+	align-items: center;	
+}
+
+.barra-lateral .logo-detalhe i{
+	font-size: 30px;
+	color: #fff;
+	height: 50px;
+	min-width: 78px;
+	text-align: center;
+	line-height: 50px;
+	
+}
+
+.barra-lateral .logo-detalhe .logo-nome{
+	font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+
+}
+
+.barra-lateral .navega-links{
+	height: 100%;
+	padding-top: 20px;
+}
+
+.barra-lateral .navega-links li{
+	position: relative;
+	list-style: none;
+	transition: all 0.4s ease;
+}
+
+.barra-lateral .navega-links li:hover{
+	background: #1d1b31;
+}
+
+.barra-lateral .navega-links li .expande-link{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.barra-lateral .navega-links li i{
+	height: 50px;
+	min-width: 78px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.barra-lateral .navega-links li a{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+.barra-lateral .navega-links li a .link-nome {
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;	
+}
+
+.barra-lateral .navega-links li .menu-expandido {
+	padding: 6px 6px 14px 80px;
+	margin-top: -10px;
+	background: #1d1b31;
+	/*display: none;*/
+}
+
+.barra-lateral .navega-links li .menu-expandido a {
+	color: #fff;
+	font-size: 15px;
+	padding: 5px 0;
+	white-space: nowrap;
+	opacity: 0.6;
+	transition: all 0.3s ease;
+}
+
+.barra-lateral .navega-links li .menu-expandido a:hover {
+	opacity: 1;
+}
+
+.barra-lateral.close .navega-links li .menu-expandido {
+	position: absolute;
+	left: 100%;
+	top: -10px;
+	margin-top: 0;
+	padding: 10px 20px;
+	border-radius: 0 6px 6px 0;
+	transition: all 0.4s ease;
+	opacity: 0;
+	pointer-events: none;
+	
+}
+
+.barra-lateral.close .navega-links li:hover .menu-expandido {
+	top: 0;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.barra-lateral .navega-links li .menu-expandido .link-nome{
+	display: none;
+}
+
+.barra-lateral.close .navega-links li .menu-expandido .link-nome{
+	font-size: 18px;
+	opacity: 1;
+	display: block;
+	
+}
