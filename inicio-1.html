@@ -14,7 +14,7 @@
 </head>
 
 <body>
- <div class="barra-lateral close" >
+ <div class="barra-lateral" >
   <div class="logo-detalhe">
    <i class='bx bx-buildings'></i>
    <span class="logo-nome">MB Baterias</span>
@@ -133,12 +133,30 @@
 	</ul>
    </li> 
    
-  </ul>
-  <div class="pefil-detalhe">
+  <li>
+   <div class="perfil-detalhe">
 	<div class="perfil-content">
 		<img src="foto.jpg" alt="pefil">
 	</div>
-  </div>
- </div>	
+	<div class="nome-usuario">
+		<div class="perfil-nome">Samuel Azevedo</div>
+		<div class="perfil-funcao">Administrador</div>
+	</div>
+		<i class='bx bx-log-out' ></i>
+   </div>
+  </li>
+ </ul>
+</div>
+	<script>
+		let arrow = document.querySelectorAll(".arrow");
+		
+		for (var i = 0; i < arrow.length; i++) {
+			arrow[i].addEventListener("click",(e)=>{
+				let arrowParent = e.target.parentElement.parentElement;
+				console.log(arrowParent);
+				arrowParent.classList.toggle("MostrarMenu");
+			});
+		}
+	</script>
 </body>
 </html>
