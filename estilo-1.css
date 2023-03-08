@@ -16,6 +16,12 @@
 	height: 100%;
 	width: 260px;
 	background: #11101d;
+	z-index: 100;
+	transition: all 0.5s ease;
+}
+
+.barra-lateral.close{
+	width: 78px;
 }
 
 .barra-lateral .logo-detalhe{
@@ -32,20 +38,32 @@
 	min-width: 78px;
 	text-align: center;
 	line-height: 50px;
-	
+
 }
 
 .barra-lateral .logo-detalhe .logo-nome{
 	font-size: 18px;
 	color: #fff;
 	font-weight: 600;
+	transition: 0.3s ease;
+	transition-delay: 0.1s;
 
+}
+
+.barra-lateral.close .logo-detalhe .logo-nome{
+	transition-delay: 0s;
+	opacity: 0;
+	pointer-events: none;
 }
 
 .barra-lateral .navega-links{
 	height: 100%;
 	padding: 30px 0 150px 0px;
 	overflow: auto;
+}
+
+.barra-lateral.close .navega-links{
+	overflow: visible;
 }
 
 .barra-lateral .navega-links::-webkit-scrollbar {
@@ -67,6 +85,10 @@
 	justify-content: space-between;
 }
 
+.barra-lateral.close .navega-links li .expande-link {
+	display: block;
+}
+
 .barra-lateral .navega-links li i{
 	height: 50px;
 	min-width: 78px;
@@ -74,11 +96,17 @@
 	line-height: 50px;
 	color: #fff;
 	font-size: 20px;
+	cursor: pointer;
 	transition: all 0.3s ease;
 }
 
 .barra-lateral .navega-links li.MostrarMenu i.arrow {
 	transform: rotate(-180deg);
+}
+
+.barra-lateral.close .navega-links i.arrow {
+	display: none;
+	
 }
 
 .barra-lateral .navega-links li a{
@@ -91,6 +119,12 @@
 	font-size: 18px;
 	font-weight: 400;
 	color: #fff;	
+}
+
+.barra-lateral.close .navega-links li a .link-nome {
+	opacity: 0;
+	pointer-events: none;
+	
 }
 
 .barra-lateral .navega-links li .menu-expandido {
@@ -124,8 +158,9 @@
 	margin-top: 0;
 	padding: 10px 20px;
 	border-radius: 0 6px 6px 0;
-	transition: all 0.4s ease;
+	transition: 0s;
 	opacity: 0;
+	display: block;
 	pointer-events: none;
 	
 }
@@ -134,6 +169,7 @@
 	top: 0;
 	opacity: 1;
 	pointer-events: auto;
+	transition: all 0.4s ease;
 }
 
 .barra-lateral .navega-links li .menu-expandido .link-nome{
@@ -141,17 +177,22 @@
 }
 
 .barra-lateral.close .navega-links li .menu-expandido .link-nome{
+	display: none;
+}
+
+.barra-lateral.close .navega-links li .menu-expandido .link-nome{
 	font-size: 18px;
 	opacity: 1;
 	display: block;
-	
 }
 
 .barra-lateral .navega-links li .menu-expandido .blank{
 	opacity: 1;
 	pointer-events: auto;
 	padding: 3px 20px 6px 16px;
-	
+	opacity: 0;
+	pointer-events: none;
+
 }
 
 .barra-lateral .navega-links li:hover .menu-expandido .blank{
@@ -168,6 +209,12 @@
 	justify-content: space-between;
 	background: #1d1b31;
 	padding: 6px 0;
+	transition: all 0.5s ease;
+}
+
+.barra-lateral.close .perfil-detalhe {
+	width: 78px;
+	background: none;
 }
 
 .barra-lateral .perfil-detalhe .perfil-content{
@@ -180,16 +227,27 @@
 	width: 52px;
 	object-fit: cover;
 	border-radius: 16px;
-	margin: 0 5px 0 8px;
+	margin: 0 12px 0 14px;
 	background: #1d1b31;
+	transition: all 0.5s ease;
+}
+
+.barra-lateral.close .perfil-detalhe img {
 	padding: 10px;
 }
 
 .barra-lateral .perfil-detalhe .perfil-nome,
 .barra-lateral .perfil-detalhe .perfil-funcao {
 	color: #fff;
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: 500;
+	white-space: nowrap;
+}
+
+.barra-lateral.close .perfil-detalhe i,
+.barra-lateral.close .perfil-detalhe .perfil-nome,
+.barra-lateral.close .perfil-detalhe .perfil-funcao {
+	display: none;
 }
 
 .barra-lateral .perfil-detalhe .perfil-funcao {
@@ -225,6 +283,7 @@
 
 .home-secao .home-content .bx-menu {
 	margin: 0 15px;
+	cursor: pointer;
 }
 
 .home-secao .home-content .texto {
