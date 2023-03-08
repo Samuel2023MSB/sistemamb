@@ -88,7 +88,11 @@
 	padding: 6px 6px 14px 80px;
 	margin-top: -10px;
 	background: #1d1b31;
-	/*display: none;*/
+	display: none;
+}
+
+.barra-lateral .navega-links li.MostrarMenu .menu-expandido {
+	display: block;
 }
 
 .barra-lateral .navega-links li .menu-expandido a {
@@ -146,17 +150,39 @@
 	transform: translateY(-50%);
 }
 
-.barra-lateral .pefil-detalhe {
+.barra-lateral .perfil-detalhe {
+	width: 250px;
 	position: fixed;
 	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #1d1b31;
+	padding: 6px 0;
 }
 
-.barra-lateral .pefil-detalhe img {
+.barra-lateral .perfil-detalhe .perfil-content{
+	display: flex;
+	align-items: center;
+}
+
+.barra-lateral .perfil-detalhe img {
 	height: 52px;
 	width: 52px;
 	object-fit: cover;
 	border-radius: 16px;
-	margin: 0 14px 0 12px;
+	margin: 0 5px 0 8px;
 	background: #1d1b31;
 	padding: 10px;
+}
+
+.barra-lateral .perfil-detalhe .perfil-nome,
+.barra-lateral .perfil-detalhe .perfil-funcao {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.barra-lateral .perfil-detalhe .perfil-funcao {
+	font-size: 10px;
 }
