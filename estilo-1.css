@@ -14,7 +14,7 @@
 	top: 0;
 	left: 0;
 	height: 100%;
-	width: 250px;
+	width: 260px;
 	background: #11101d;
 }
 
@@ -44,9 +44,13 @@
 
 .barra-lateral .navega-links{
 	height: 100%;
-	padding-top: 20px;
+	padding: 30px 0 150px 0px;
+	overflow: auto;
 }
 
+.barra-lateral .navega-links::-webkit-scrollbar {
+	display: none;
+}
 .barra-lateral .navega-links li{
 	position: relative;
 	list-style: none;
@@ -70,6 +74,11 @@
 	line-height: 50px;
 	color: #fff;
 	font-size: 20px;
+	transition: all 0.3s ease;
+}
+
+.barra-lateral .navega-links li.MostrarMenu i.arrow {
+	transform: rotate(-180deg);
 }
 
 .barra-lateral .navega-links li a{
@@ -151,7 +160,7 @@
 }
 
 .barra-lateral .perfil-detalhe {
-	width: 250px;
+	width: 260px;
 	position: fixed;
 	bottom: 0;
 	display: flex;
@@ -179,10 +188,46 @@
 .barra-lateral .perfil-detalhe .perfil-nome,
 .barra-lateral .perfil-detalhe .perfil-funcao {
 	color: #fff;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 500;
 }
 
 .barra-lateral .perfil-detalhe .perfil-funcao {
-	font-size: 10px;
+	font-size: 11px;
+}
+
+.home-secao {
+	position: relative;
+	height: 100vh;
+	background: #E4E9F7;
+	left: 260px;
+	width: calc(100% - 260px);
+	transition: all 0.5s ease;
+	
+}
+
+.barra-lateral.close ~ .home-secao {
+	left: 78px;
+	width: calc(100% - 78px);
+}
+
+.home-secao .home-content{
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+
+.home-secao .home-content .bx-menu,
+.home-secao .home-content .texto {
+	color: #11101d;
+	font-size: 35px;
+}
+
+.home-secao .home-content .bx-menu {
+	margin: 0 15px;
+}
+
+.home-secao .home-content .texto {
+	font-size: 26px;
+	font-weight: 600;
 }
