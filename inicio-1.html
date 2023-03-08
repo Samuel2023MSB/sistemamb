@@ -14,7 +14,7 @@
 </head>
 
 <body>
- <div class="barra-lateral" >
+ <div id="elemento" class="barra-lateral" >
   <div class="logo-detalhe">
    <i class='bx bx-buildings'></i>
    <span class="logo-nome">MB Baterias</span>
@@ -147,16 +147,53 @@
   </li>
  </ul>
 </div>
+	
+	<section class="home-secao">
+		<div class="home-content">
+			<i class='bx bx-menu'></i>
+			<span class="texto">Bem vindo ao Sistema MB</span>
+		</div>
+	</section>
+
+
+	
 	<script>
 		let arrow = document.querySelectorAll(".arrow");
 		
 		for (var i = 0; i < arrow.length; i++) {
 			arrow[i].addEventListener("click",(e)=>{
 				let arrowParent = e.target.parentElement.parentElement;
-				console.log(arrowParent);
+				
 				arrowParent.classList.toggle("MostrarMenu");
 			});
 		}
+		
+		let barralateral = document.querySelectorAll(".bx-menu");
+		let el = document.getElementById("elemento");
+		
+		for (var i = 0; i < barralateral.length; i++) {
+			barralateral[i].addEventListener("click",(e)=>{
+				let barralateralParent = e.target.parentElement.parentElement;
+				
+				
+				<!--el.classList.remove('barra-lateral');
+				el.classList.add("close");
+				
+				
+				<!-- barralateralParent.classList.toggle("close");
+			});
+		}
+		
+		
+		/*;
+		let sidebarBtn = document.querySelectorAll(".bx-menu");
+		
+		console.log(sidebarBtn);
+		
+		sidebarBtn.addEventListener("click",()=>{
+			barra-lateral.classList.toggle("close");
+		});
+		*/
 	</script>
 </body>
 </html>
