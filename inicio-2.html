@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<header>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="estilo-2.css">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</header>
+<body>
+	<input type="text" id="alternar-menu">
+	<div class="barra-lateral">
+		<div class="cabecalho-lateral">
+			<h3>M<span>oderno</span></h3>
+		</div>
+		
+		<div class="perfil">
+			<div class="imagem-perfil bg-img" style="background-image: url(foto.jpg)"></div>
+			<h4>Samuel Azevedo</h4>
+			<small>Administrador</small>
+		</div>
+			
+		<div class="conteudo-cabecalho">
+		</div>
+		
+		<div class="menu-lateral">
+			<ul>
+				<li>
+					<a href="#" class="ativo">
+						<span class="las la-home"></span>
+						<small>Dashboard</small>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span class="las la-desktop"></span>
+						<small>Caixa</small>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span><i class='bx bxs-component'></i></span>
+						<small>Estoque</small>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span class="las la-plus-circle"></span>
+						<small>Cadastro</small>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span ><i class='bx bx-money-withdraw'></i></span>
+						<small>Financeiro</small>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span><i class='bx bx-spreadsheet'></i></span>
+						<small>Orçamentos</small>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span><i class='bx bxs-car-mechanic'></i></span>
+						<small>Ordem de Serviço</small>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span><i class='bx bx-bar-chart-alt-2'></i></span>
+						<small>Relatórios</small>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span class="las la-box"></span>
+						<small>Documentos</small>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="conteudo-principal" >
+		
+		<header>
+			<div class="cabecalho-conteudo-principal">
+				<label for="nav-toggle">
+					<span class="la la-bars"></span>
+				</label>
+				
+				<div class="cabecalho-menu">
+					<label for="">
+						<span class="las la-search"></span>
+					</label>
+					
+					<div class="icone-notificacao">
+						<span class="las la-envelope"></span>
+						<span class="notificacao">4</span>
+					</div>
+					
+					<div class="icone-notificacao">
+						<span class="las la-bell"></span>
+						<span class="notificacao">3</span>
+					</div>
+					
+					<div class="usuario">
+						<div class="bg-img" style="background-image: url(foto2.jpg)"></div>
+						<span class="las la-power-off"></span>
+						<span>Logout</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<main>
+			
+			<div class="cabecalho-da-pagina">
+				<h1>Dashboard</h1>
+				<small>Home / Dashboard</small>
+			</div>
+			
+			<div class="conteudo-da-pagina">
+				<div class="analises">
+			
+				<div class="card">
+					<div class="card-cabecalho">
+						<h2>950</h2>
+						<span><i class='bx bxs-component'></i></span>
+					</div>
+					
+					<div class="card-progresso">
+						<small>Produtos em Estoque</small>
+						<div class="card-indicador">
+							<div class="indicador um">800 Estoque Alto</div>
+							<div class="indicador e-baixo">100 Estoque Baixo</div>
+							<div class="indicador e-zero">50 Estoque Zerado</div>
+						</div>
+					</div>
+				</div>
+				
+					<div class="card">
+					<div class="card-cabecalho">
+						<h2>229</h2>
+						<span> <i class='bx bx-money-withdraw'></i></span>
+					</div>
+					
+					<div class="card-progresso">
+						<small>Contas a Receber</small>
+						<div class="card-indicador">
+							<div class="indicador dois">50 A receber</div>
+							<div class="indicador c-hoje" >9 Vencem Hoje</div>
+							<div class="indicador c-atrasados" >60 Atrasados</div>
+						</div>
+					</div>
+				</div>
+				
+					<div class="card">
+					<div class="card-cabecalho">
+						<h2>50</h2>
+						<span><i class='bx bx-money'></i></span>
+					</div>
+					
+					<div class="card-progresso">
+						<small>Pagamentos a Efetuar</small>
+						<div class="card-indicador">
+							<div class="indicador tres">44 A Vencer</div>
+							<div class="indicador pgt-hoje" >2 Vencem Hoje</div>
+							<div class="indicador pgt-atrasados" >4 Atrasados</div>
+						</div>
+					</div>
+				</div>
+				
+					<div class="card">
+					<div class="card-cabecalho">
+						<h2>09</h2>
+						<span><i class='bx bx-spreadsheet'></i></span>
+					</div>
+					
+					<div class="card-progresso">
+						<small>Orçamentos</small>
+						<div class="card-indicador">
+							<div class="indicador quatro">5 Aprovados</div>
+							<div class="indicador orc-abertos">2 Em Aberto</div>
+							<div class="indicador orc-cancelados">2 Cancelados</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+				<div class="registros">
+					
+					<div class="registros-cabecalho">
+						<div class="adicionar">
+							<span>Entradas<span>
+							<select name="" id="">
+								<option value="">ID</option>
+							</select>
+							<button>Adicionar</button>
+						</div>
+						<div class="navegar">
+							<input type="search" placeholder="Pesquisar" class="pesquisar-registros">
+							<select name="" id="">
+								<option value="">Status</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="tabela-responsiva">
+					<table width="100%">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>CLIENTE</th>
+								<th>VALOR</th>
+								<th>VENCIMENTO</th>
+								<th>STATUS</th>
+								<th>AÇÕES</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="11.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Rodrigo Carvalho</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="3.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Rayssa Feitosa</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="4.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Hércules Holanda</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="11.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Rodrigo Carvalho</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="12.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Franksley Sá</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="25.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Arleto Vilhena</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="9.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Roberto Gomes</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="11.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Rodrigo Carvalho</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="6.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Mailson Barbosa</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="83.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Juciel Teixeira</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="11.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Rodrigo Carvalho</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>#5033</td>
+								<td>
+									<div class="cliente">
+										<img src="11.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-info">
+											<h4>Rodrigo Carvalho</h4>
+											<small>(98) 98888-9999</small>
+										</div>
+									</div>
+								</td>
+								<td>
+									R$ 50,00
+								</td>
+								<td>
+									20 de março, 2023
+								</td>
+								<td>
+									A vencer
+								</td>
+								<td>
+									<div class="acoes">
+										<span class="las la-telegram-plane"></span>
+										<span class="las la-eye"></span>
+										<span class="las la-ellipsis-v"></span>
+									</div>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					</div>
+				
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

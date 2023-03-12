@@ -1,0 +1,415 @@
+
+@import url('https://fots.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+	--main-color: #22BAA0;
+	--color-dark: #34425A;
+	--text-grey: #B0B0B0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+	font-family: 'Merriweather', sans-serif;	
+}
+
+#alternar-menu {
+	display: none;
+}
+
+.barra-lateral {
+	position: fixed;
+	height: 100%;
+	width: 165px;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 100;
+	background: var(--color-dark);
+	overflow-y: auto;
+}
+
+.barra-lateral::-webkit-scrollbar {
+	display: none;
+}
+
+.cabecalho-lateral {
+	box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%); 
+	background: var(--main-color);
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cabecalho-lateral h3, .cabecalho-lateral span {
+	color: #fff;
+	font-weight: 400;
+}
+
+.perfil {
+	text-align: center;
+	padding: 2rem 0rem;
+}
+
+.bg-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+.imagem-perfil {
+	height: 90px;
+	width: 90px;
+	display: inline-block;
+	margin: 0 auto .5rem auto;
+	border: 3px solid #899DC1;
+}
+
+.perfil h4 {
+	color: #fff;
+	font-weight: 500;
+}
+
+.perfil small {
+	color: #899DC1;
+	font-weight: 600;
+}
+
+.menu-lateral ul {
+	text-align: center;
+}
+
+.menu-lateral a {
+	display: block;
+	padding: 1.2rem 0rem;
+}
+
+.menu-lateral a.ativo {
+	background: #2B384E;
+}
+
+.menu-lateral a.ativo span, .menu-lateral a.ativo small {
+	color: #fff;
+}
+
+.menu-lateral a span {
+	display: block;
+	text-align: center;
+	font-size: 1.7rem;
+}
+
+.menu-lateral a span, .menu-lateral a small {
+	color: #899DC1;
+}
+
+.conteudo-principal {
+	margin-left: 165px;
+	width: calc(100% - 165px);
+	
+}
+
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	height: 60px;
+	left: 165px;
+	box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%);
+	background: #fff;
+
+}
+
+.cabecalho-conteudo-principal, .cabecalho-menu {
+	display: flex;
+	align-items: center;
+}
+
+.cabecalho-conteudo-principal {
+	justify-content: space-between;
+	padding: 0rem 1rem;
+}
+
+.cabecalho-menu label:first-child span {
+	font-size: 1.3rem;
+}
+
+.cabecalho-menu {
+	justify-content: flex-end;
+	padding-top: .5rem;
+}
+
+.cabecalho-menu label,
+.cabecalho-menu .icone-notificacao {
+	margin-right: 2rem;
+	position: relative;
+}
+
+.cabecalho-menu label span,
+.icone-notificacao span:first-child {
+	font-size: 1.3rem;
+}
+
+.icone-notificacao span:last-child {
+	position: absolute;
+	background: var(--main-color);
+	height: 16px;
+	width: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	right: -5px;
+	top: -5px;
+	color: #fff;
+	font-size: .8rem;
+	font-weight: 500;
+	
+}
+
+.usuario {
+	display: flex;
+	align-items: center;
+}
+
+.usuario div {
+	height: 40px;
+	width: 40px;
+	margin-right: 1rem;
+}
+
+.usuario span:last-child {
+	display: inline-block;
+	margin-left: .3rem;
+	font-size: .8rem;
+}
+
+main {
+	margin-top: 60px;
+
+}
+
+.cabecalho-da-pagina {
+	padding: 1.3rem 1rem;
+	background: #E9EDF2;
+	border-bottom: 1px solid #DEE2E8;
+}
+
+.cabecalho-da-pagina h1, .cabecalho-da-pagina small {
+	color: #74767D;
+}
+
+.conteudo-da-pagina {
+	padding: 1.3rem 1rem;
+	background: #F1F4F9;
+}
+
+.analises {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1.5rem;
+	margin-top: 0rem;
+	margin-bottom: 2rem;
+}
+
+.card {
+	box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 10%);
+	background: #fff;
+	padding: 1rem;
+	border-radius: 3px;
+}
+
+.card-cabecalho {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-cabecalho h2 {
+	color: #333;
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.card-cabecalho span {
+	font-size: 3.2rem;
+	color: var(--text-grey);
+}
+
+.card-progresso {
+	color: #777;
+	font-size: .9rem;
+	font-weight: 600;
+}
+
+.card-progresso small {
+	margin-bottom: 0.5rem;
+	font-size: 0.9rem;
+}
+
+.card-indicador {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+/*	margin: .1rem 0rem; 
+	height: 30px;
+	background: #E9EDF2; */
+	overflow: hidden;
+	font-size: .6rem;
+	color: #fff;
+}
+
+.indicador {
+	margin-top: 0.6rem;
+	align-items: center;
+}
+
+.indicador.um {	
+	width: 32%;
+	background: green;
+	padding: .2rem;
+	border-radius: 2px;
+	margin-right: 0.2rem;
+}
+
+.indicador.e-baixo {
+	background: yellow;
+	padding: .2rem;
+	color: #777;
+	border-radius: 2px;
+	margin-right: 0.2rem;
+}
+
+.indicador.e-zero {
+	background: red;
+	padding: .2rem;
+	border-radius: 2px;
+}
+
+
+.indicador.dois {
+	background: green;
+	padding: .2rem;
+	border-radius: 2px;
+	margin-right: 0.2rem;
+}
+
+.indicador.c-hoje {
+	background: yellow;
+	padding: .2rem;
+	color: #777;
+	border-radius: 2px;
+	margin-right: 0.2rem;
+}
+
+.indicador.c-atrasados {
+	background: red;
+	padding: .2rem;
+	border-radius: 2px;
+}
+
+.indicador.tres {
+	background: green;
+	padding: .2rem;
+	border-radius: 2px;
+	margin-right: 0.2rem;
+}
+
+.indicador.pgt-hoje {
+	background: yellow;
+	padding: .2rem;
+	color: #777;
+	border-radius: 2px;
+	margin-right: 0.2rem;
+}
+
+.indicador.pgt-atrasados {
+	background: red;
+	padding: .2rem;
+	border-radius: 2px;
+}
+
+.indicador.quatro {
+	background: green;
+	padding: .2rem;
+	border-radius: 2px;
+	margin-right: 0.2rem;
+}
+
+.indicador.orc-abertos {
+	background: yellow;
+	padding: .2rem;
+	color: #777;
+	border-radius: 2px;
+	margin-right: 0.2rem;
+}
+
+.indicador.orc-cancelados {
+	background: red;
+	padding: .2rem;
+	border-radius: 2px;
+}
+
+.registros {
+	box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 10%);
+	background: #fff;
+	border-radius: 3px;
+}
+
+.registros-cabecalho {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.adicionar, .navegar {
+	display: flex;
+	align-items: center;
+}
+
+.adicionar span {
+	display: inline-block;
+	margin-right: .6rem;
+	font-size: .9rem;
+	color: #666;
+}
+
+input, button, select {
+	outline: none;
+}
+
+.adicionar select, .navegar input {
+	height: 35px;
+	border: 1px solid #B0B0B0;
+	border-radius: 3px;
+	display: inline-block;
+	width: 75px;
+	margin-right: .5rem;
+	margin-left: .8rem;
+	padding: 0rem .5rem;
+	color: #666;
+}
+
+.adicionar button {
+	background: var(--main-color);
+	color: #fff;
+	height: 37px;
+	border-radius: 4px;
+	padding: 0rem 1rem;
+	border: none;
+	font-weight: 600;
+}
+
+.adicionar button:hover {
+	background: #19AFAF;
+	cursor: pointer;
+}
+
+.navegar input {
+	width: 150px;
+}
