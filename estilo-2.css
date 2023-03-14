@@ -59,6 +59,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 50%;
+	background-size: cover;
 }
 
 .imagem-perfil {
@@ -269,7 +270,7 @@ main {
 }
 
 .indicador.verde {	
-	background: rgb(102, 205, 170, 0.7);
+	background: rgb(0, 205, 100, 0.7);
 	padding: .2rem;
 	border-radius: 2px;
 	margin-right: 0.2rem;
@@ -354,7 +355,8 @@ input, button, select {
 }
 
 .tabela-responsiva {
-	overflow-x: auto;
+	width: 100%;
+	overflow: auto;
 
 }
 
@@ -377,8 +379,9 @@ table thead th:first-child {
 	padding-left: 1rem;
 }
 
-table tbody td:first-child {
-	padding: 1.5rem;
+table tbody td {
+	padding: 1rem 0rem;
+	color: #555;
 }
 
 table tbody td:first-child {
@@ -392,6 +395,10 @@ table tbody tr {
 	border-bottom: 1px solid #DEE2E8; 
 }
 
+table tbody tr:hover {
+	background: #E9EDF2;
+}
+
 .cliente {
 	display: flex;
 	align-items: center;
@@ -400,4 +407,62 @@ table tbody tr {
 
 .cliente-imagem {
 	margin-right: .5rem;
+	border: 2px solid #B0B0B0;
+	height: 50px;
+	width: 50px; 
+}
+
+.cliente-info h4 {
+	color: #555;
+	font-size: .95rem;
+}
+
+.cliente-info small {
+	color: #777;
+}
+
+.acoes span {
+	display: inline-block;
+	font-size: 1.5rem;
+	margin-left: .5rem;
+}
+
+.status {
+	display: inline-block;
+	text-align: center;
+	font-weight: 600;
+	color: var(--main-color);
+	background: #E5F8ED;
+	padding: .2rem .5rem;
+	border-radius: 5px;
+	font-size: .8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+	.analises {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/*
+@media only screen and (max-width: 768px) {
+	.analises {
+		grid-template-columns: 100%;
+	}
+	
+	.barra-lateral {
+		left: -165px;
+		transition: all 0.5s ease;
+	}
+	
+	header {
+		left: 0;
+		width: 100%;
+		transition: all 0.5s ease;
+	}
+	
+	main {
+		margin-left: -165px; 
+		width: 100%;
+	}
 }
