@@ -176,7 +176,7 @@ header {
 	align-items: center;
 }
 
-.usuario div {
+.usuario div, .cliente-imagem {
 	height: 40px;
 	width: 40px;
 	margin-right: 1rem;
@@ -268,88 +268,23 @@ main {
 	align-items: center;
 }
 
-.indicador.um {	
-	width: 32%;
-	background: green;
+.indicador.verde {	
+	background: rgb(102, 205, 170, 0.7);
 	padding: .2rem;
 	border-radius: 2px;
 	margin-right: 0.2rem;
 }
 
-.indicador.e-baixo {
-	background: yellow;
+.indicador.amarelo {
+	background: rgb(255, 215, 0, 0.7);
 	padding: .2rem;
 	color: #777;
 	border-radius: 2px;
 	margin-right: 0.2rem;
 }
 
-.indicador.e-zero {
-	background: red;
-	padding: .2rem;
-	border-radius: 2px;
-}
-
-
-.indicador.dois {
-	background: green;
-	padding: .2rem;
-	border-radius: 2px;
-	margin-right: 0.2rem;
-}
-
-.indicador.c-hoje {
-	background: yellow;
-	padding: .2rem;
-	color: #777;
-	border-radius: 2px;
-	margin-right: 0.2rem;
-}
-
-.indicador.c-atrasados {
-	background: red;
-	padding: .2rem;
-	border-radius: 2px;
-}
-
-.indicador.tres {
-	background: green;
-	padding: .2rem;
-	border-radius: 2px;
-	margin-right: 0.2rem;
-}
-
-.indicador.pgt-hoje {
-	background: yellow;
-	padding: .2rem;
-	color: #777;
-	border-radius: 2px;
-	margin-right: 0.2rem;
-}
-
-.indicador.pgt-atrasados {
-	background: red;
-	padding: .2rem;
-	border-radius: 2px;
-}
-
-.indicador.quatro {
-	background: green;
-	padding: .2rem;
-	border-radius: 2px;
-	margin-right: 0.2rem;
-}
-
-.indicador.orc-abertos {
-	background: yellow;
-	padding: .2rem;
-	color: #777;
-	border-radius: 2px;
-	margin-right: 0.2rem;
-}
-
-.indicador.orc-cancelados {
-	background: red;
+.indicador.vermelho {
+	background: rgb(255, 127, 80, 0.9);
 	padding: .2rem;
 	border-radius: 2px;
 }
@@ -383,7 +318,7 @@ input, button, select {
 	outline: none;
 }
 
-.adicionar select, .navegar input {
+.adicionar select, .navegar input, .navegar select {
 	height: 35px;
 	border: 1px solid #B0B0B0;
 	border-radius: 3px;
@@ -412,4 +347,57 @@ input, button, select {
 
 .navegar input {
 	width: 150px;
+}
+
+.navegar select { 
+	width: 100px;
+}
+
+.tabela-responsiva {
+	overflow-x: auto;
+
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table thead tr {
+	background: #E9EDF2;
+}
+
+table thead th {
+	padding: 1rem 0rem;
+	text-align: left;
+	color: #444;
+	font-size: .9rem;
+}
+
+table thead th:first-child {
+	padding-left: 1rem;
+}
+
+table tbody td:first-child {
+	padding: 1.5rem;
+}
+
+table tbody td:first-child {
+	padding-left: 1rem;
+	color: var(--main-color);
+	font-weight: 600;
+	font-size: .9rem;
+}
+
+table tbody tr {
+	border-bottom: 1px solid #DEE2E8; 
+}
+
+.cliente {
+	display: flex;
+	align-items: center;
+	
+}
+
+.cliente-imagem {
+	margin-right: .5rem;
 }
