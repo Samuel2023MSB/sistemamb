@@ -10,7 +10,7 @@
 </header>
 <body>
 	<input type="text" id="alternar-menu">
-	<div class="barra-lateral">
+	<div id="elemento2" class="barra-lateral">
 		<div class="cabecalho-lateral">
 			<h3>M<span>oderno</span></h3>
 		</div>
@@ -34,7 +34,7 @@
 				</li>
 				
 				<li>
-					<a href="#">
+					<a href="caixa.html">
 						<span class="las la-desktop"></span>
 						<small>Caixa</small>
 					</a>
@@ -92,7 +92,7 @@
 		</div>
 	</div>
 	
-	<div class="conteudo-principal" >
+	<div id="conteudocentral" class="conteudo-principal" >
 		
 		<header>
 			<div class="cabecalho-conteudo-principal">
@@ -123,8 +123,8 @@
 				</div>
 			</div>
 		</header>
-		
-		<main>
+	
+		<main id="conteudocentral" class="">
 			
 			<div class="cabecalho-da-pagina">
 				<h1>Dashboard</h1>
@@ -133,74 +133,73 @@
 			
 			<div class="conteudo-da-pagina">
 				<div class="analises">
-			
-				<div class="card">
-					<div class="card-cabecalho">
-						<h2>950</h2>
-						<span><i class='bx bxs-component'></i></span>
-					</div>
-					
-					<div class="card-progresso">
-						<small>Produtos em Estoque</small>
-						<div class="card-indicador">
-							<div class="indicador um">800 Estoque Alto</div>
-							<div class="indicador e-baixo">100 Estoque Baixo</div>
-							<div class="indicador e-zero">50 Estoque Zerado</div>
-						</div>
-					</div>
-				</div>
 				
 					<div class="card">
-					<div class="card-cabecalho">
-						<h2>229</h2>
-						<span> <i class='bx bx-money-withdraw'></i></span>
-					</div>
-					
-					<div class="card-progresso">
-						<small>Contas a Receber</small>
-						<div class="card-indicador">
-							<div class="indicador dois">50 A receber</div>
-							<div class="indicador c-hoje" >9 Vencem Hoje</div>
-							<div class="indicador c-atrasados" >60 Atrasados</div>
+						<div class="card-cabecalho">
+							<h2>950</h2>
+							<span><i class='bx bxs-component'></i></span>
+						</div>
+						
+						<div class="card-progresso">
+							<small>Produtos em Estoque</small>
+							<div class="card-indicador">
+								<div class="indicador verde">800 Estoque Alto</div>
+								<div class="indicador amarelo">100 Estoque Baixo</div>
+								<div class="indicador vermelho">50 Estoque Zerado</div>
+							</div>
 						</div>
 					</div>
-				</div>
 				
 					<div class="card">
-					<div class="card-cabecalho">
-						<h2>50</h2>
-						<span><i class='bx bx-money'></i></span>
-					</div>
-					
-					<div class="card-progresso">
-						<small>Pagamentos a Efetuar</small>
-						<div class="card-indicador">
-							<div class="indicador tres">44 A Vencer</div>
-							<div class="indicador pgt-hoje" >2 Vencem Hoje</div>
-							<div class="indicador pgt-atrasados" >4 Atrasados</div>
+						<div class="card-cabecalho">
+							<h2>229</h2>
+							<span> <i class='bx bx-money-withdraw'></i></span>
+						</div>
+						
+						<div class="card-progresso">
+							<small>Contas a Receber</small>
+							<div class="card-indicador">
+								<div class="indicador verde">50 A receber</div>
+								<div class="indicador amarelo" >9 Vencem Hoje</div>
+								<div class="indicador vermelho" >60 Atrasados</div>
+							</div>
 						</div>
 					</div>
-				</div>
 				
 					<div class="card">
-					<div class="card-cabecalho">
-						<h2>09</h2>
-						<span><i class='bx bx-spreadsheet'></i></span>
-					</div>
-					
-					<div class="card-progresso">
-						<small>Orçamentos</small>
-						<div class="card-indicador">
-							<div class="indicador quatro">5 Aprovados</div>
-							<div class="indicador orc-abertos">2 Em Aberto</div>
-							<div class="indicador orc-cancelados">2 Cancelados</div>
+						<div class="card-cabecalho">
+							<h2>50</h2>
+							<span><i class='bx bx-money'></i></span>
+						</div>
+						
+						<div class="card-progresso">
+							<small>Pagamentos a Efetuar</small>
+							<div class="card-indicador">
+								<div class="indicador verde">44 A Vencer</div>
+								<div class="indicador amarelo" >2 Vencem Hoje</div>
+								<div class="indicador vermelho" >4 Atrasados</div>
+							</div>
 						</div>
 					</div>
-				</div>
 				
-			</div>
-			
-			
+					<div class="card">
+						<div class="card-cabecalho">
+							<h2>09</h2>
+							<span><i class='bx bx-spreadsheet'></i></span>
+						</div>
+						
+						<div class="card-progresso">
+							<small>Orçamentos</small>
+							<div class="card-indicador">
+								<div class="indicador verde">5 Aprovados</div>
+								<div class="indicador amarelo">2 Em Aberto</div>
+								<div class="indicador vermelho">2 Cancelados</div>
+							</div>
+						</div>
+					</div>
+				
+				</div> <!-- Div da Análise-->
+				
 				<div class="registros">
 					
 					<div class="registros-cabecalho">
@@ -224,11 +223,11 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>CLIENTE</th>
-								<th>VALOR</th>
-								<th>VENCIMENTO</th>
-								<th>STATUS</th>
-								<th>AÇÕES</th>
+								<th>CLIENTE<span class="las la-sort"></span></th>
+								<th>VALOR<span class="las la-sort"></span></th>
+								<th>VENCIMENTO<span class="las la-sort"></span></th>
+								<th>STATUS<span class="las la-sort"></span></th>
+								<th>AÇÕES<span class="las la-sort"></span></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -236,7 +235,7 @@
 								<td>#5033</td>
 								<td>
 									<div class="cliente">
-										<img src="11.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-imagem bg-img" style="background-image: url(11.jpg)"></div>
 										<div class="cliente-info">
 											<h4>Rodrigo Carvalho</h4>
 											<small>(98) 98888-9999</small>
@@ -254,7 +253,7 @@
 								</td>
 								<td>
 									<div class="acoes">
-										<span class="las la-telegram-plane"></span>
+										<span class="lab la-telegram-plane"></span>
 										<span class="las la-eye"></span>
 										<span class="las la-ellipsis-v"></span>
 									</div>
@@ -265,7 +264,7 @@
 								<td>#5033</td>
 								<td>
 									<div class="cliente">
-										<img src="3.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-imagem bg-img" style="background-image: url(3.jpg)"></div>
 										<div class="cliente-info">
 											<h4>Rayssa Feitosa</h4>
 											<small>(98) 98888-9999</small>
@@ -294,7 +293,7 @@
 								<td>#5033</td>
 								<td>
 									<div class="cliente">
-										<img src="4.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-imagem bg-img" style="background-image: url(4.jpg)"></div>
 										<div class="cliente-info">
 											<h4>Hércules Holanda</h4>
 											<small>(98) 98888-9999</small>
@@ -323,36 +322,7 @@
 								<td>#5033</td>
 								<td>
 									<div class="cliente">
-										<img src="11.jpg" height="40px" width="40px" alt="">
-										<div class="cliente-info">
-											<h4>Rodrigo Carvalho</h4>
-											<small>(98) 98888-9999</small>
-										</div>
-									</div>
-								</td>
-								<td>
-									R$ 50,00
-								</td>
-								<td>
-									20 de março, 2023
-								</td>
-								<td>
-									A vencer
-								</td>
-								<td>
-									<div class="acoes">
-										<span class="las la-telegram-plane"></span>
-										<span class="las la-eye"></span>
-										<span class="las la-ellipsis-v"></span>
-									</div>
-								</td>
-							</tr>
-							
-							<tr>
-								<td>#5033</td>
-								<td>
-									<div class="cliente">
-										<img src="12.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-imagem bg-img" style="background-image: url(12.jpg)"></div>
 										<div class="cliente-info">
 											<h4>Franksley Sá</h4>
 											<small>(98) 98888-9999</small>
@@ -381,7 +351,7 @@
 								<td>#5033</td>
 								<td>
 									<div class="cliente">
-										<img src="25.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-imagem bg-img" style="background-image: url(25.jpg)"></div>
 										<div class="cliente-info">
 											<h4>Arleto Vilhena</h4>
 											<small>(98) 98888-9999</small>
@@ -410,7 +380,7 @@
 								<td>#5033</td>
 								<td>
 									<div class="cliente">
-										<img src="9.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-imagem bg-img" style="background-image: url(91.jpg)"></div>
 										<div class="cliente-info">
 											<h4>Roberto Gomes</h4>
 											<small>(98) 98888-9999</small>
@@ -434,41 +404,12 @@
 									</div>
 								</td>
 							</tr>
-							
+											
 							<tr>
 								<td>#5033</td>
 								<td>
 									<div class="cliente">
-										<img src="11.jpg" height="40px" width="40px" alt="">
-										<div class="cliente-info">
-											<h4>Rodrigo Carvalho</h4>
-											<small>(98) 98888-9999</small>
-										</div>
-									</div>
-								</td>
-								<td>
-									R$ 50,00
-								</td>
-								<td>
-									20 de março, 2023
-								</td>
-								<td>
-									A vencer
-								</td>
-								<td>
-									<div class="acoes">
-										<span class="las la-telegram-plane"></span>
-										<span class="las la-eye"></span>
-										<span class="las la-ellipsis-v"></span>
-									</div>
-								</td>
-							</tr>
-							
-							<tr>
-								<td>#5033</td>
-								<td>
-									<div class="cliente">
-										<img src="6.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-imagem bg-img" style="background-image: url(6.jpg)"></div>
 										<div class="cliente-info">
 											<h4>Mailson Barbosa</h4>
 											<small>(98) 98888-9999</small>
@@ -497,7 +438,7 @@
 								<td>#5033</td>
 								<td>
 									<div class="cliente">
-										<img src="83.jpg" height="40px" width="40px" alt="">
+										<div class="cliente-imagem bg-img" style="background-image: url(83.jpg)"></div>
 										<div class="cliente-info">
 											<h4>Juciel Teixeira</h4>
 											<small>(98) 98888-9999</small>
@@ -521,36 +462,7 @@
 									</div>
 								</td>
 							</tr>
-							
-							<tr>
-								<td>#5033</td>
-								<td>
-									<div class="cliente">
-										<img src="11.jpg" height="40px" width="40px" alt="">
-										<div class="cliente-info">
-											<h4>Rodrigo Carvalho</h4>
-											<small>(98) 98888-9999</small>
-										</div>
-									</div>
-								</td>
-								<td>
-									R$ 50,00
-								</td>
-								<td>
-									20 de março, 2023
-								</td>
-								<td>
-									A vencer
-								</td>
-								<td>
-									<div class="acoes">
-										<span class="las la-telegram-plane"></span>
-										<span class="las la-eye"></span>
-										<span class="las la-ellipsis-v"></span>
-									</div>
-								</td>
-							</tr>
-							
+														
 							<tr>
 								<td>#5033</td>
 								<td>
@@ -582,11 +494,25 @@
 							
 						</tbody>
 					</table>
-					</div>
+					</div> <!-- Div da Tabela Responsiva-->
 				
-				</div>
-			</div>
+				</div> <!-- Div dos registros-->
+			</div> <!-- Div do Conteúdo da página a baixo do Cabeçalho da Página -->
 		</main>
+	</div> <!-- Div do Conteúdo Principal-->
+	<div id="conteudocentral" class="conteudocentral">
 	</div>
+	<script>
+		let el = document.getElementById("elemento2");
+		$(document).ready(function() {
+			$("#elemento2 ul li a").click(function( e ){
+				e.preventDefault();		
+				var href = $( this ).attr('href');
+				$("#conteudocentral").load(href +" #conteudocentral");
+			});
+		});
+	
+
+	</script>
 </body>
 </html>
