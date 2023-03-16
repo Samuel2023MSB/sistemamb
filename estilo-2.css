@@ -30,6 +30,7 @@
 	z-index: 100;
 	background: var(--color-dark);
 	overflow-y: auto;
+	transition: left 300ms;
 }
 
 .barra-lateral::-webkit-scrollbar {
@@ -63,8 +64,8 @@
 }
 
 .imagem-perfil {
-	height: 90px;
-	width: 90px;
+	height: 70px;
+	width: 70px;
 	display: inline-block;
 	margin: 0 auto .5rem auto;
 	border: 3px solid #899DC1;
@@ -78,6 +79,10 @@
 .perfil small {
 	color: #899DC1;
 	font-weight: 600;
+}
+
+.barra-lateral {
+	
 }
 
 .menu-lateral ul {
@@ -103,6 +108,33 @@
 	font-size: 1.7rem;
 }
 
+#alternar-menu:checked ~ .barra-lateral {
+	width: 60px;
+}
+
+#alternar-menu:checked ~ .barra-lateral .cabecalho-lateral span {
+	display: none;
+}
+
+#alternar-menu:checked ~ .conteudo-principal {
+	margin-left: 60px;
+	width: calc(100% - 60px);
+}
+
+#alternar-menu:checked ~ header {
+	left: 60px;
+	width: calc(100% - 60px);
+}
+
+#alternar-menu:checked ~ .barra-lateral .perfil,
+#alternar-menu:checked ~ .barra-lateral .menu-lateral a small  {
+	display: none;
+}
+
+#alternar-menu:checked ~ .barra-lateral .menu-lateral a span {
+	font-size: 1.3rem;
+}
+
 .menu-lateral a span, .menu-lateral a small {
 	color: #899DC1;
 }
@@ -110,6 +142,7 @@
 .conteudo-principal {
 	margin-left: 165px;
 	width: calc(100% - 165px);
+	transition: margin-left 300ms;
 	
 }
 
@@ -122,7 +155,7 @@ header {
 	left: 165px;
 	box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%);
 	background: #fff;
-
+	transition: left 300ms;
 }
 
 .cabecalho-conteudo-principal, .cabecalho-menu {
@@ -137,6 +170,11 @@ header {
 
 .cabecalho-menu label:first-child span {
 	font-size: 1.3rem;
+}
+
+.cabecalho-conteudo-principal label {
+	cursor: pointer;
+	
 }
 
 .cabecalho-menu {
@@ -441,11 +479,12 @@ table tbody tr:hover {
 @media only screen and (max-width: 1200px) {
 	.analises {
 		grid-template-columns: repeat(2, 1fr);
+		
 	}
 }
 
-/*
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 605px) {
 	.analises {
 		grid-template-columns: 100%;
 	}
@@ -453,6 +492,7 @@ table tbody tr:hover {
 	.barra-lateral {
 		left: -165px;
 		transition: all 0.5s ease;
+		z-index: 90;
 	}
 	
 	header {
@@ -461,8 +501,18 @@ table tbody tr:hover {
 		transition: all 0.5s ease;
 	}
 	
-	main {
-		margin-left: -165px; 
+	.conteudo-principal {
+		margin-left: 0;
 		width: 100%;
+		transition: all 0.5s ease;
+	}
+	
+	#alternar-menu:checked ~ .barra-lateral {
+		left: 0;
+	}
+	
+	table {
+		width: 900px;
+		
 	}
 }
